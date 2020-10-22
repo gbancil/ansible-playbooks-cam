@@ -1,6 +1,6 @@
-- hosts: all
+- hosts: ibm
   tasks:
-    - name: Copy using the 'content' for inline data
+    - name: Service Provisioned
       copy:
-        content: 'Shay was here'
-        dest: '/tmp/shay.txt'
+        content: 'Service has successfully provisioned and can be accessed at http://159.122.87.46:8080'
+        dest: '/tmp/serviceSuccess.txt'
